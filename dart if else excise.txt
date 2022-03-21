@@ -1,0 +1,202 @@
+import 'dart:io';
+
+main() {
+  stdout.write("Please Enter Your Marks to Check Grade");
+  String? sccoe = stdin.readLineSync();
+  int secore = int.parse(sccoe!);
+  if (secore >= 90 && secore < 100) {
+    print("your Grade is A+");
+  } else if (secore >= 80 && secore < 90) {
+    print("your Grade is A");
+  } else if (secore >= 70 && secore < 80) {
+    print("your Grade is B");
+  } else if (secore >= 60 && secore < 70) {
+    print("your Grade is C");
+  } else if (secore >= 50 && secore < 60) {
+    print("your Grade is D");
+  } else if (secore >= 0 && secore < 50) {
+    print("Fail");
+  } else {
+    print("Plese Enter Vaild Number");
+  }
+}
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+ stdout.write("Plese Enter Bill Unit");
+  String? Billunit = stdin.readLineSync();
+  int unit = int.parse(Billunit!);
+  if (unit > 0 && unit <= 300) {
+    bill = unit * 2;
+  } else if (unit > 300 && unit <= 500) {
+    bill = unit * 5;
+  } else if (unit > 500 && unit <= 2000) {
+    bill = unit * 7;
+  } else if (unit > 2000) {
+    bill = bill! + (bill * 5 / 100).toInt();
+  } 
+    bill = bill! + 150;
+  
+  print("Total Bill is $bill");
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ 
+  double area;
+  double cirum;
+  stdout.write("Plese Enter Radius");
+  String? radius = stdin.readLineSync();
+  double radius1 = double.parse(radius!);
+  stdout.write("Enter 1 to check radius & 2 to check cirumference");
+  String? Choice = stdin.readLineSync();
+  double choice1 = double.parse(Choice!);
+  if (choice1 == 1) {
+    area = radius1 * radius1 * 3.14;
+    print("Area is =$area");
+  } else if (choice1 == 2) {
+    cirum = 2 * 3.14 * radius1;
+    print("cirumference is = $cirum");
+  } else {
+    print("Please Enter 1 & 2 value Only");
+  }
+ 
+
+
+>>>>>>>>>>>>>>
+
+main() {
+  double nets;
+  stdout.write("Please Enter Your Salary");
+  String? Salary1 = stdin.readLineSync();
+  double salary = double.parse(Salary1!);
+  if (salary > 20000) {
+    nets = salary - (salary * 7 / 100);
+    print("The salary is after detect is $nets");
+  } else if (salary >= 10000) {
+    nets = salary - 1000;
+    print("The salary is after detect is $nets");
+  } else {
+    nets = salary;
+    print("The salary is after detect is $nets");
+  }
+}
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+main() {
+  stdout.write("Plese enter three number ");
+  String? a = stdin.readLineSync();
+  int A = int.parse(a!);
+  String? b = stdin.readLineSync();
+  int B = int.parse(b!);
+  String? c = stdin.readLineSync();
+  int C = int.parse(c!);
+  if (A < B) if (A < C)
+    print("$A is smallest numbner");
+  else {
+    print("$C is smallest number");
+  }
+  else if (B < C)
+    print("$B is smallest Numebr");
+  else {
+    print("$C is smallest Number");
+  }
+}
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+main() {
+  stdout.write("Plese enter three number ");
+  String? a = stdin.readLineSync();
+  int A = int.parse(a!);
+  String? b = stdin.readLineSync();
+  int B = int.parse(b!);
+  String? c = stdin.readLineSync();
+  int C = int.parse(c!);
+  if (A == B) if (A == C)
+    print("All number are eqaul");
+  else {
+    print("Numer are differnt");
+  }
+  else {
+    print("Numers are different");
+  }
+}
+
+
+>>>>>>>>>>>>>>>>>>>>>
+
+main() {
+  stdout.write("Plese enter three number ");
+  String? a = stdin.readLineSync();
+  int A = int.parse(a!);
+  String? b = stdin.readLineSync();
+  int B = int.parse(b!);
+  String? c = stdin.readLineSync();
+  int C = int.parse(c!);
+  if (A > B) if (A > C)
+    print("$A is Maximum numbner");
+  else {
+    print("$C is Maximum number");
+  }
+  else if (B > C)
+    print("$B is Maximum Numebr");
+  else {
+    print("$C is Maximum Number");
+  }
+}
+
+>>>>>>>>>
+main() {
+  stdout.write("Plese enter Character to Check its vowel 7 not   >> ");
+  String? ch = stdin.readLineSync();
+  if (ch == 'A' ||
+      ch == 'a' ||
+      ch == 'E' ||
+      ch == 'e' ||
+      ch == 'I' ||
+      ch == 'i' ||
+      ch == 'O' ||
+      ch == 'o' ||
+      ch == 'U' ||
+      ch == 'u')
+    print("its vowel");
+  else {
+    print("its not volwe");
+  }
+}
+ 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+main() {
+  stdout.write("Plese enter Character to Check  Even & Odd   >> ");
+  String? ch = stdin.readLineSync();
+  int number = int.parse(ch!);
+  if (number % 2 == 0) {
+    print("It's Even Number");
+  } else {
+    print("its odd number");
+  }
+}
+
+>.
+main() {
+  stdout.write("Plese enter Three number  >> ");
+  String? no1 = stdin.readLineSync();
+  int a = int.parse(no1!);
+  String? no2 = stdin.readLineSync();
+  int b = int.parse(no2!);
+  String? no3 = stdin.readLineSync();
+  int c = int.parse(no3!);
+  if ((a != b) && (b != c) && (c != a)) {
+    print("$a$b$c \t");
+    print("$a$c$b \t");
+    print("$b$a$c \t");
+    print("$b$c$a \t");
+    print("$c$a$b \t");
+    print("$c$b$a \t");
+  }
+}
+
